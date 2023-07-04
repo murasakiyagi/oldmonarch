@@ -347,8 +347,8 @@ public class FieldMasu {
 		//hakoPath[i]の内容（パス）はメインで一々設定する。
 			//例　fl.hakoPath[0] = "../img/karahako.png";
 		for(int i=0; i < hako.length; i++) {
-			hako[i] = new Image(new File( hakoPath[i] ).toURI().toString());
-			//hako[i] = new Image(hakoPath[i]);
+// 			hako[i] = new Image(new File( hakoPath[i] ).toURI().toString());
+			hako[i] = new Image(hakoPath[i]);//url.toString()はFileを使わない
 		}
 		hakoW = hako[0].getWidth();//箱のサイズは全部同じだからhako[0]
 		hakoH = hako[0].getHeight();

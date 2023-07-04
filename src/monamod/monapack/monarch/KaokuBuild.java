@@ -67,7 +67,8 @@ public class KaokuBuild extends ImageView {
 		this.name = name;
 		this.team = team;
 		this.paths = paths;
-		img = new Image(new File( paths[1][team-1] ).toURI().toString());
+// 		img = new Image(new File( paths[1][team-1] ).toURI().toString());
+		img = new Image(paths[1][team-1]);
 		setImage(img);
 		this.setViewport(new Rectangle2D(0,0,32,32));
 		this.path = path;

@@ -94,7 +94,8 @@ public class CharaBuild extends ImageView implements Cloneable {
 		this.name = name;
 		this.team = team;
 		this.paths = paths;
-		img = new Image(new File( paths[0][team-1] ).toURI().toString());
+// 		img = new Image(new File( paths[0][team-1] ).toURI().toString());
+		img = new Image(paths[0][team-1]);
 		setImage(img);
 		this.path = path;
 		this.row = row;

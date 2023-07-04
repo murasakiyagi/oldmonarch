@@ -99,7 +99,7 @@ public class Monarch extends Application {
 	String[] strCbArr2 = new String[6];
 	String[] strKbArr2 = new String[3];
 
-	String[] hakoPath3 = {//箱の絵
+	String[] hakoPath4 = {//箱の絵
 		getUrl("src/monamod/pictpack/nanamehakoao.png").toString(),
 		new File("src/monamod/pictpack/nanamehako.png").toURI().toString(),
 		new File("src/monamod/pictpack/nanamehakoaka.png").toURI().toString()
@@ -107,25 +107,49 @@ public class Monarch extends Application {
 
 
 	String[] hakoPath = {//箱の絵
-		"src/monamod/pictpack/nanamehakoao.png",
-		"src/monamod/pictpack/nanamehako.png",
-		"src/monamod/pictpack/nanamehakoaka.png"
+		cl.getResource("nanamehakoao.png").toString(),
+		cl.getResource("nanamehako.png").toString(),
+		cl.getResource("nanamehakoaka.png").toString()
 	};
 
 	String[] strCbArr = {//キャラの絵
-		"src/monamod/pictpack/jurokuA32+3.png",
-		"src/monamod/pictpack/jurokuB32+3.png",
-		"src/monamod/pictpack/p128.png",
-		"src/monamod/pictpack/man04.png",
-		"src/monamod/pictpack/teki.png",
-		"src/monamod/pictpack/man05.png"
+		cl.getResource("jurokuA32+3.png").toString(),
+		cl.getResource("jurokuB32+3.png").toString(),
+		cl.getResource("p128.png").toString(),
+		cl.getResource("man04.png").toString(),
+		cl.getResource("teki.png").toString(),
+		cl.getResource("man05.png").toString()
 	};
 
 	String[] strKbArr = {//家屋の絵
-		"src/monamod/pictpack/kaoku01.png",
-		"src/monamod/pictpack/kaoku02.png",
-		"src/monamod/pictpack/kaoku03.png"
+		cl.getResource("kaoku01.png").toString(),
+		cl.getResource("kaoku02.png").toString(),
+		cl.getResource("kaoku03.png").toString()
 	};
+
+// -----------------------------------------
+		String[] hakoPath3 = {//箱の絵
+			"src/monamod/pictpack/nanamehakoao.png",
+			"src/monamod/pictpack/nanamehako.png",
+			"src/monamod/pictpack/nanamehakoaka.png"
+		};
+	
+		String[] strCbArr3 = {//キャラの絵
+			"src/monamod/pictpack/jurokuA32+3.png",
+			"src/monamod/pictpack/jurokuB32+3.png",
+			"src/monamod/pictpack/p128.png",
+			"src/monamod/pictpack/man04.png",
+			"src/monamod/pictpack/teki.png",
+			"src/monamod/pictpack/man05.png"
+		};
+	
+		String[] strKbArr3 = {//家屋の絵
+			"src/monamod/pictpack/kaoku01.png",
+			"src/monamod/pictpack/kaoku02.png",
+			"src/monamod/pictpack/kaoku03.png"
+		};
+// ----------------------------------------
+
 
 	String[][] strArr = {
 		strCbArr,
